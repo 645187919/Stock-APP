@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="股票代号："
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20dp"
+
+            />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="50dp"
+            android:id="@+id/strategy_stock_num"
+            android:hint="请输入股票代号"
+
+
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#d9d9d9" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="选择投资策略:"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+
+            />
+        <RadioGroup
+            android:id="@+id/radiogroup_strategy"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+
+
+            >
+            <RadioButton
+                android:id="@+id/bt_sdj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SDJ"
+                android:textSize="20dp"
+                android:checked="true"
+                android:gravity="center"
+                />
+            <RadioButton
+                android:id="@+id/bt_MACD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MACD"
+                android:textSize="20dp"
+                android:gravity="center"
+
+                />
+
+
+
+
+        </RadioGroup>
+
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#d9d9d9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="投资建议:"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:hint="三种建议：买去或卖出或观望"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+
+            />
+
+
+
+</LinearLayout>
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="锦囊妙计"
+        android:textStyle="bold"
+        android:textSize="20dp"
+
+        />
+</LinearLayout>

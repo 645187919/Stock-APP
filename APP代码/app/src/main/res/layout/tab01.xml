@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <!-- ///////// 顶部标题栏 ///////// -->
+
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="#E93030">
+
+        <Button
+            android:id="@+id/but_login"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/selector_but_text"
+            android:drawableBottom="@mipmap/titlebar_dropdown_icon"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:text="登录"
+            android:textColor="@color/white"/>
+
+        <CheckBox
+            android:id="@+id/ck_vip"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_toEndOf="@id/but_login"
+            android:layout_toRightOf="@id/but_login"
+            android:background="@drawable/selector_ck_vip"
+            android:button="@null"/>
+
+        <CheckBox
+            android:id="@+id/ck_sunmoon"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@+id/but_search"
+            android:layout_toStartOf="@+id/but_search"
+            android:background="@drawable/selector_ck_sunmoon"
+            android:button="@null"/>
+
+        <Button
+            android:id="@+id/but_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/selector_titlebar_search"/>
+
+    </RelativeLayout>
+
+
+    -
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_title">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- ///////// 上部viewpager导航栏 ///////// -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <include layout="@layout/server_layout"></include>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginTop="3dp"
+                android:background="#CBCBCB"/>
+
+            <!-- ///////// 股民学院 ///////// -->
+
+
+            <!-- //////////// 投资参考 //////////// -->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/shape_yuanjiao"
+                android:orientation="vertical">
+
+
+                -
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/selector_background_gray"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/tzck_icon"
+                        android:layout_width="20dp"
+                        android:layout_height="23dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginStart="6dp"
+                        android:background="@drawable/first_page_tzck_icon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
+                        android:layout_toEndOf="@+id/tzck_icon"
+                        android:layout_toRightOf="@+id/tzck_icon"
+                        android:text="投资参考"/>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="#CBCBCB"/>
+
+                <TextView
+                    android:id="@+id/tzck_toutiao1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="两市800余支股票涨停 午后跳水原因揭秘"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tzck_toutiao2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="两市800余支股票涨停 午后跳水原因揭秘"
+                    android:textSize="12sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="#CBCBCB"/>
+
+                <TextView
+                    android:id="@+id/tzck_jd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:clickable="true"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:text="【焦点】 中央巡视组进驻一行三会"
+                    android:textSize="12sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="#CBCBCB"/>
+
+                <TextView
+                    android:id="@+id/tzck_bd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:clickable="true"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:text="【必读】 21日新闻联播集锦"
+                    android:textSize="12sp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.7dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="#CBCBCB"/>
+
+                <TextView
+                    android:id="@+id/tzck_cx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:clickable="true"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="6dp"
+                    android:text="【猜想】 周四三大猜想"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

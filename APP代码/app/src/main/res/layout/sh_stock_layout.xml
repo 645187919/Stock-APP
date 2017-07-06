@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:background="#ffffff"
+    >
+
+    <include
+        android:id="@+id/rlHead"
+        layout="@layout/stock_item_top" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#d9d9d9" />
+
+    <ListView
+        android:id="@+id/stock_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rlHead"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null" >
+    </ListView>
+
+</RelativeLayout>

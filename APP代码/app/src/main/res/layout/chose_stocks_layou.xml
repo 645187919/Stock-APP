@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="股票代号："
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20dp"
+            
+            />
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="50dp"
+        android:id="@+id/edStockNum"
+        android:hint="请输入股票代号"
+        
+        
+        />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#d9d9d9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="选择算法机器算法:"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+
+            />
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+
+
+            >
+            <RadioButton
+                android:id="@+id/bt_SVM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SVM"
+                android:textSize="20dp"
+                android:checked="true"
+                android:gravity="center"
+                />
+            <RadioButton
+            android:id="@+id/bt_RDF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="随机森林（Random Forest）"
+            android:textSize="20dp"
+            android:gravity="center"
+
+            />
+
+
+
+
+        </RadioGroup>
+
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#d9d9d9" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="选择预测的属性:"/>
+        <RadioGroup
+            android:id="@+id/radiogroup_chose_feature"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+
+
+            >
+            <RadioButton
+                android:id="@+id/bt_open"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="open"
+                android:textSize="20dp"
+                android:checked="true"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#3881FF"
+                />
+            <RadioButton
+            android:id="@+id/bt_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="low"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#3881FF"
+
+            />
+            <RadioButton
+                android:id="@+id/bt_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="high"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#3881FF"
+
+                />
+            <RadioButton
+                android:id="@+id/bt_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="close"
+                android:textStyle="bold"
+                android:textColor="#3881FF"
+                android:textSize="20dp"
+                android:gravity="center"
+
+                />
+
+
+
+
+
+        </RadioGroup>
+
+
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#d9d9d9" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="预测的准确率:"/>
+        <TextView
+            android:id="@+id/tv_pre_accury"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:textColor="#DC2F2F"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:hint="默认为开盘价"
+            android:gravity="center"
+
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#d9d9d9" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="预测第二天的属性值:"/>
+        <TextView
+            android:id="@+id/tv_pre_num"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="2"
+            android:textColor="#DC2F2F"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:hint="默认为开盘价"
+            android:gravity="center"
+
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#d9d9d9" />
+
+
+    <Button
+        android:id="@+id/bt_start_pre"
+        android:layout_width="120dp"
+
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+
+        android:text="开始预测"
+
+
+        android:textSize="20dp"
+
+        />
+
+
+
+
+
+
+</LinearLayout>

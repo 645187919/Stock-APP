@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+              android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="#E93030">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="财经资讯"
+            android:textColor="@color/white"
+
+            />
+
+
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/weiqiu_listView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        ></ListView>
+
+</LinearLayout>

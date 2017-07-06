@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff"
+
+              android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:background="#E93030">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="交易"
+            android:textColor="@color/white"
+
+            />
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/invest"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/iv_invest"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/tzt_hqmenu_8" />
+
+        <TextView
+            android:id="@+id/tv_invest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/iv_invest"
+            android:text="股票收益计算"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#d9d9d9" />
+
+
+    <RelativeLayout
+        android:id="@+id/fund"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/iv_fund"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:src="@mipmap/tzt_hqmenu_11" />
+
+        <TextView
+            android:id="@+id/tv_fund"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/iv_fund"
+            android:text="基金收益计算"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+

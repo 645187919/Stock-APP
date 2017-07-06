@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 引导页面小圆点选中与未选择状态 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- <item android:state_enabled="true" android:drawable="@drawable/dark_dot"></item>
+    <item android:state_enabled="false" android:drawable="@drawable/white_dot"></item> -->
+    <item android:state_enabled="true" android:drawable="@drawable/dot_gray"></item>
+    <item android:state_enabled="false" android:drawable="@drawable/dot_red"></item>
+</selector>

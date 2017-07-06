@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.hzy.magic.stock">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/stock_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="new_function_introduce.NewFunction">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".szStockActivity"></activity>
+        <activity android:name=".stock_detail"></activity>
+        <activity android:name=".shStockActivity"></activity>
+        <activity android:name=".HKStcokActivity"></activity>
+        <activity android:name=".AmerianStockActivity"></activity>
+        <activity android:name=".SHIndex"></activity>
+        <activity android:name=".SZIndex"></activity>
+        <activity android:name=".choseStocks"></activity>
+        <activity android:name=".strategy"></activity>
+        <activity android:name=".caculateEarning"></activity>
+        <activity android:name=".KnowStock"></activity>
+
+    </application>
+
+</manifest>

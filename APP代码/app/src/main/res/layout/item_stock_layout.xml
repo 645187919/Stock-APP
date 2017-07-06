@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="50dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+
+        >
+        <TextView
+            android:id="@+id/stock_name_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:text="万科"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/stock_num_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="sh600002"
+            android:textSize="18dp"
+
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/pricechange_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:text="15.36"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000000"
+
+
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/new_price"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:text="15.36"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#000000"
+
+
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/changepercent_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20dp"
+            android:text="15.36"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#B90101"
+
+
+
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
